@@ -1,0 +1,19 @@
+
+
+Auto check all drives for autorun.inf & X:\RECYCLER
+and delete them all.
+
+GetDriveType
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig\services
+
+
+CreateEvent
+RemoveDirectory
+
+
+create menu popup & custom icon
+
+Shell_NotifyIcon
