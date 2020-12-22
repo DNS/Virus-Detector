@@ -26,6 +26,6 @@ Table of Contents:
 
 3. UNINSTALLING VIRUS DETECTOR
 
-	Click `unistall.bat'
+	Click `uninstall.bat'
 
 
