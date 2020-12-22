@@ -1,0 +1,4 @@
+
+IMPORTANT!  Help save the world!  Communicate any problems and suggested
+patches to dns@cpan.org so we can keep the world in sync.
+

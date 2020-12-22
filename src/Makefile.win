@@ -1,0 +1,33 @@
+# Project: virus-detector
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = C:\mingw\bin\g++.exe
+CC   = C:\mingw\bin\gcc.exe
+WINDRES = C:\mingw\bin\windres.exe
+RES  = virus-detector_private.res
+OBJ  = virus-detector.o $(RES)
+LINKOBJ  = virus-detector.o $(RES)
+LIBS =  -L"C:/mingw/lib" -mwindows  -s 
+INCS =  -I"C:/mingw/include" 
+CXXINCS =  -I"C:/mingw/include"  -I"C:/mingw/include/c++/3.4.5"  -I"C:/mingw/include/c++/3.4.5/mingw32"  -I"C:/mingw/include/c++/3.4.5/backward"  -I"C:/mingw/lib/gcc/mingw32/3.4.5/include" 
+BIN  = virus-detector.exe
+CXXFLAGS = $(CXXINCS)   -ansi
+CFLAGS = $(INCS)   -ansi
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before virus-detector.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "virus-detector.exe" $(LIBS)
+
+virus-detector.o: virus-detector.c
+	$(CC) -c virus-detector.c -o virus-detector.o $(CFLAGS)
+
+virus-detector_private.res: virus-detector_private.rc 
+	$(WINDRES) -i virus-detector_private.rc --input-format=rc -o virus-detector_private.res -O coff 

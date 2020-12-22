@@ -1,0 +1,59 @@
+[Project]
+FileName=virus-detector.dev
+Name=virus-detector
+UnitCount=1
+Type=0
+Ver=1
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=virus-detector_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+IsCpp=0
+Icon=virus-detector.ico
+ExeOutput=
+ObjectOutput=
+OverrideOutput=0
+OverrideOutputName=virus-detector.exe
+HostApplication=
+Folders=
+CommandLine=-checksize
+UseCustomMakefile=0
+CustomMakefile=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=1000000000000000000100
+
+[Unit1]
+FileName=virus-detector.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[VersionInfo]
+Major=1
+Minor=0
+Release=0
+Build=37
+LanguageID=1033
+CharsetID=1252
+CompanyName=Tetasoft Inc.
+FileVersion=
+FileDescription=Detect virus presence in your computer.
+InternalName=Virus Detector
+LegalCopyright=Copyright © 2010 Daniel Sirait, Copyright © 2010 Tetasoft Inc.
+LegalTrademarks=Virus Detector ™
+OriginalFilename=virus-detector.exe
+ProductName=Virus Detector
+ProductVersion=
+AutoIncBuildNr=1
+
